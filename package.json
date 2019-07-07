@@ -1,0 +1,68 @@
+{
+  "name": "flowr-faker",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "",
+  "author": "",
+  "files": [
+    "lib"
+  ],
+  "main": "index.js",
+  "keywords": [
+    "flowr"
+  ],
+  "devDependencies": {
+    "eslint": "^5.9.0",
+    "eslint-config-prettier": "^3.3.0",
+    "eslint-config-xo": "^0.25.0",
+    "eslint-plugin-prettier": "^3.1.0",
+    "fake-web-socket-server": "1.1.2",
+    "husky": "^1.2.0",
+    "jest": "^24.8.0",
+    "lint-staged": "^8.1.0",
+    "nodemon": "^1.19.1",
+    "prettier": "^1.15.2"
+  },
+  "engines": {
+    "npm": ">= 4.0.0"
+  },
+  "scripts": {
+    "serve": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1 && jest",
+    "pretest": "eslint ."
+  },
+  "license": "ISC",
+  "dependencies": {
+    "rpc-websockets": "^4.4.1"
+  },
+  "lint-staged": {
+    "*.js": [
+      "eslint --fix",
+      "git add"
+    ],
+    "*.json": [
+      "prettier --write",
+      "git add"
+    ]
+  },
+  "eslintConfig": {
+    "extends": [
+      "xo",
+      "prettier"
+    ],
+    "env": {
+      "jest": true,
+      "node": true
+    },
+    "rules": {
+      "prettier/prettier": "error"
+    },
+    "plugins": [
+      "prettier"
+    ]
+  },
+  "repository": "hunmar/flowr-faker",
+  "jest": {
+    "testEnvironment": "node"
+  }
+}

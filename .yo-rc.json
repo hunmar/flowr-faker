@@ -1,0 +1,9 @@
+{
+  "generator-node": {
+    "promptValues": {
+      "authorName": "Maxim Myalin",
+      "authorEmail": "maxim@myalin.ru",
+      "authorUrl": ""
+    }
+  }
+}
