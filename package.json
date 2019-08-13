@@ -33,6 +33,7 @@
   },
   "license": "ISC",
   "dependencies": {
+    "json-schema-faker": "^0.5.0-rc17",
     "rpc-websockets": "^4.4.1"
   },
   "lint-staged": {
